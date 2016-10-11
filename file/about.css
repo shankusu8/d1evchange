@@ -1,0 +1,63 @@
+
+
+.main{
+	width: 1110px;
+	margin: 0 auto;
+	
+}
+/*面包屑*/
+.crumb{height:30px; line-height:30px;font-size:12px; color:#7a7a7a;  overflow:hidden; padding-top: 42px;}
+.crumb a{ line-height:30px; color:#7a7a7a; text-decoration:none;}
+.crumb a i { display:inline-block; float:left; width:17px; height:16px; background:url(../images/d1ev_ico.png) -98px -20px no-repeat; margin:7px 5px 0 0;}
+.crumb .yellow { font-weight:bold;}
+.crumb a:hover{ color:#FF6600; text-decoration:underline;}
+.crumb a:hover i { background-position:-116px -20px;}
+
+.main .con{
+	padding-bottom: 17px;
+}
+.main .con h2{
+	font-size: 42px;
+	height: 102px;
+	line-height: 102px;
+	color: rgb(93, 93, 93);
+	
+}
+.main .con p{
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 29px;
+}
+.main .con h3{ font-size: 16px; line-height: 32px; font-weight: bold; color: #000;}
+.main .con li{
+	padding-bottom:28px ;
+}
+
+
+/*投稿加入大牛*/
+.mainR-join{
+	display: block;
+	width: 345px;
+	height: 56px;
+	line-height: 56px;
+	background-color: #f60;
+	text-align: center;
+	font-size: 20px;
+	color: #fff;
+	margin: 60px auto 200px;
+	position: relative;
+
+}
+ .mainR-join a{ color: #fff; }
+ .mainR-join a:hover span{
+	 color:#fff;
+ }
+ .mainR-join i{
+	width: 20px;
+	height: 20px;
+	background: url(http://www.d1ev.com/daniu/images/tougao.png) no-repeat;
+	display: inline-block;
+	position: relative;
+	left: -10px;
+	top: 2px;
+}

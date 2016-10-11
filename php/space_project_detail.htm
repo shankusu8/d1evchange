@@ -1,0 +1,60 @@
+<script src="<{$config.weburl}>/script/prototype.js" type=text/javascript></script>
+<div class="common_box">
+<style>
+#imgmove img{max-height:200px; max-width:200px;}
+
+table tr td{padding-left:5px;background-color:#FFFFFF; height:34px; border-bottom:1px solid #ddd;border-right:1px solid #ddd;}
+</style>
+<table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-top:1px solid #ddd; border-left:1px solid #ddd;">
+  <tr>
+    <td class="guide_ba" colspan="3"><span style=" float:left;padding-left:10px;"><strong>采购内容</strong></span></td>
+    </tr>
+  <tr>
+    <td width="15%" height="32">采购名称</td>
+    <td width="57%" height="32" >
+	<{$detailproject.cg_proname}></td>
+  </tr>
+  <tr>
+    <td height="25">采购类别</td>
+    <td ><{if $detailproject.cg_type==1}>新能源汽车<{/if}><{if $detailproject.cg_type==2}>能源系统<{/if}><{if $detailproject.cg_type==3}>驱动及控制装置<{/if}><{if $detailproject.cg_type==4}>配套设置<{/if}><{if $detailproject.cg_type==5}>原材料<{/if}><{if $detailproject.cg_type==6}>其他<{/if}></td>
+  </tr>
+  <{if $detailproject.cg_cost>0}>
+  <tr>
+    <td height="25">采购金额</td>
+    <td ><{$detailproject.cg_cost}></td>
+ </tr>
+ <{/if}>
+    <tr>
+      <td height="25">采购数量</td>
+      <td ><{$detailproject.cg_amount}></td>
+    </tr>
+  <tr>
+    <td height="25">采购有效期</td>
+    <td ><{if $detailproject.cg_valid==1}>长期有效<{/if}><{if $detailproject.cg_valid==2}>一个月<{/if}><{if $detailproject.cg_valid==3}>三个月<{/if}><{if $detailproject.cg_valid==4}>六个月<{/if}></td>
+  </tr>
+
+    <tr>
+
+    </tr>
+  <tr>
+    <td height="170" colspan="3" align="left" valign="top" style="height:auto;">
+	<div style="width:100%px;clear:both;background:#EAF9FD;height:25px;line-height:25px;font-weight:100;">采购详情</div>
+    <div>
+    	<{$detailproject.cg_detail}>
+    </div>
+    </td>
+    </tr>
+      <tr>
+    <td height="25">联系人</td>
+    <td ><{$detailproject.cg_contact}></td>
+  </tr>
+  <tr>
+    <td height="25">联系邮箱</td>
+    <td ><{$detailproject.cg_email}></td>
+  </tr>
+  <tr>
+    <td height="25">联系电话</td>
+    <td ><{$detailproject.cg_tel}></td>
+  </tr>
+</table>
+</div>

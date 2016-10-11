@@ -1,0 +1,301 @@
+<{include file="../blue/header_qy_new.htm"}>
+<link href="/style/con_qy.css" rel="stylesheet" type="text/css" />
+<!--导航-->
+<script language="javascript">
+header_wrap_nav_num=3;
+//setSearchValue(2);
+</script>
+<div class="blank20"></div>
+
+<!--内容区-->
+<section>
+    <!--滚动开始
+	
+    <h2 class="scoll_tit"><a href="/vip_companys.php?type=5" title="优质配套供应商" target="_blank"></a></h2>
+    <div id="focusbox03" class="scoll-box">
+        <a href="javascript:void(0)" target="_self" class="prev">&lt;</a>
+        <div class="focusimg-pic">
+            <div class="items" style="width: 29999px;">
+            <{foreach item=list key=num from=$gg_list}>
+            <{if ($num) % 4 === 0}>
+				<ul class="cutover_ul">
+			<{/if}>
+				  <li><a target="_blank" href="/uhome-<{$list.gg_userid}>" title="<{$list.gg_title}>"> <img src="/uploadfile/qytj/<{$list.gg_pic}>" width="245" height="73" alt="<{$list.gg_title}>"/></a></li>
+			<{if  ($num+1) % 4 === 0}>
+				</ul>
+            <{/if}>
+            <{/foreach}>
+           </ul>
+            
+            </div>
+        </div>
+        <a href="javascript:void(0)" target="_self" class="next">&gt;</a>
+    </div>
+	-->
+	<div id="focusbox03" class="pic2 scoll-box">
+		<div class="hd">
+			<a href="javascript:void(0)" target="_self" class="prev">&lt;</a>
+			<a href="javascript:void(0)" target="_self" class="next">&gt;</a>
+		</div>
+        <div class="focusimg-pic bd">
+            <div class="items" style="width: 29999px;">
+            <{foreach item=list key=num from=$gg_list}>
+            <{if ($num) % 4 === 0}>
+				<ul class="cutover_ul">
+			<{/if}>
+				  <li><a target="_blank" href="/uhome-<{$list.gg_userid}>" title="<{$list.gg_title}>"> <img src="/uploadfile/qytj/<{$list.gg_pic}>" width="245" height="73" alt="<{$list.gg_title}>"/></a></li>
+			<{if  ($num+1) % 4 === 0}>
+				</ul>
+            <{/if}>
+            <{/foreach}>
+           </ul>
+            
+            </div>
+        </div>
+        
+    </div>
+    <!--推荐产品
+	<article class="wrap qy_index6">
+		 <h2 class="scoll_tit"><a href="/vip_companys.php?type=5" title="优质配套供应商" target="_blank"></a></h2>
+		<div class="vip_qy1">
+			<div class="hd">
+				<a class="prev">&lt;</a>
+				<a class="next">&gt;</a>
+			</div>
+			<div class="bd">
+				<ul class="qyList">
+					<{foreach item=list key=num from=$sp_list}>     
+					<li style="float: left; width: 164px; height: 112px"><a target="_blank" href="/uhome-prod-<{$list.userid}>-<{$list.id}>" title="<{$list.pname}>" ><img alt="<{$list.pname}>" src="uploadfile/comimg/small/<{$list.id}>.jpg" onerror="javascript:this.src='/image/default/s_nopic.gif';"/></a></li>
+					<{/foreach}>
+				</ul>
+			</div>
+
+	</article>
+	-->
+    <!--滚动结束-->
+	<div class="blank20"></div>
+    <!--检索-->
+    <h2 class="ss_tit"></h2>
+
+    <form action="/list_companys.php" method="get" id="search_form">
+    
+    <div class="qy_dq">
+        <span>所选地区</span>
+        <div class="dq_list">
+        	<div class="dq_more">
+                更多
+                <div class="m_dq">
+                <{foreach item=val key=num from=$arrMoreCity}>
+                    <a href="/list_companys.php?catType=<{$smarty.get.catType}>&id=<{$smarty.get.id}>&sort=<{$smarty.get.sort}>&city=<{$val|urlencode}>&key=<{$smarty.get.key|urlencode}>" <{if $smarty.get.city==$val}>class="dq_on"<{/if}>><{$val}></a>
+                <{/foreach}>
+                </div>
+            </div>
+             <a href="/list_companys.php?catType=<{$smarty.get.catType}>&id=<{$smarty.get.id}>&sort=<{$smarty.get.sort}>&city=&key=<{$smarty.get.key|urlencode}>" <{if !$smarty.get.city}>class="dq_on"<{/if}>>全国</a>
+            <{foreach item=val key=num from=$arrCity}>
+                    <a href="/list_companys.php?catType=<{$smarty.get.catType}>&id=<{$smarty.get.id}>&sort=<{$smarty.get.sort}>&city=<{$val|urlencode}>&key=<{$smarty.get.key|urlencode}>" <{if $smarty.get.city==$val}>class="dq_on"<{/if}>><{$val}></a>
+                <{/foreach}>
+            
+            
+            
+        </div>
+    </div>
+	<div class="sshy">
+        <span>所属行业</span>
+        <div class="sshy_con" id="sshy_con">
+          <a href="/list_companys.php?catType=<{$smarty.get.catType}>&id=3&sort=<{$smarty.get.sort}>&city=<{$smarty.get.city|urlencode}>&key=<{$smarty.get.key|urlencode}>" class="<{if !$smarty.get.id || $smarty.get.id == 3}>hy_on sshy_on <{/if}>R3">不限</a>
+            <{foreach item=cList key=num from=$cat}>
+            <a href="/list_companys.php?catType=<{$smarty.get.catType}>&id=<{$cList.catid}>&sort=<{$smarty.get.sort}>&city=<{$smarty.get.city|urlencode}>&key=<{$smarty.get.key|urlencode}>" class="<{if $smarty.get.id==$cList.catid||strpos($smarty.get.id,$cList.catid)!==false}>hy_on sshy_on <{/if}>R3"><{$cList.cat}></a>
+            <{/foreach}>
+        </div>
+    </div>
+    <div class="sshu_con2" id="sshu_con2">
+    	<div class="on hy">
+        </div>
+    	  <{foreach item=cList key=num from=$cat}>
+        
+    	<div class="<{if strpos($smarty.get.id,$cList.catid)!==false}>on <{/if}>hy2">
+          <a href="/list_companys.php?catType=<{$smarty.get.catType}>&id=$cList.catid&sort=<{$smarty.get.sort}>&city=<{$smarty.get.city|urlencode}>&key=<{$smarty.get.key|urlencode}>" class="<{if $smarty.get.id==$cList.catid||strpos($smarty.get.id,$cList.catid)===false}>sshy_on <{/if}>R3">不限</a>
+          
+<{foreach item=sublist from=$cList.subcat key=nums}>
+<a href="/list_companys.php?catType=<{$smarty.get.catType}>&id=<{$sublist.catid}>&sort=<{$smarty.get.sort}>&city=<{$smarty.get.city|urlencode}>&key=<{$smarty.get.key|urlencode}>" <{if $sublist.catid == $arrcat.subcatid}>class="sshy_on"<{/if}> title="<{$sublist.cat}>"><{$sublist.cat}></a>
+<{/foreach}> 
+	
+        </div>
+<{/foreach}> 
+      
+    </div>    
+    <div class="jyms">
+        <span>经营模式</span>
+        <div class="jyms_con">
+            <a href="/list_companys.php?catType=&id=<{$smarty.get.id}>&sort=<{$smarty.get.sort}>&city=<{$smarty.get.city|urlencode}>&key=<{$smarty.get.key|urlencode}>" <{if !$catType }>class="jyms_on"<{/if}>>不限</a>
+            <{foreach item=list key=num from=$arrtype}>
+                    <a href="/list_companys.php?catType=<{$list|urlencode}>&id=<{$smarty.get.id}>&sort=<{$smarty.get.sort}>&city=<{$smarty.get.city|urlencode}>&key=<{$smarty.get.key|urlencode}>" <{if $list == $catType }>class="jyms_on"<{/if}> ><{$list}></a>
+				<{/foreach}>
+        </div>
+    </div>
+
+    <div class="blank20"></div>
+    <div class="ss">
+        <div class="px">
+            <a href="/list_companys.php?catType=<{$smarty.get.catType}>&id=<{$smarty.get.id}>&sort=1&city=<{$smarty.get.city|urlencode}>&key=<{$smarty.get.key|urlencode}>" <{if !$smarty.get.sort || $smarty.get.sort == 1 }>class="px_on"<{/if}> >默认</a>
+            <a href="/list_companys.php?catType=<{$smarty.get.catType}>&id=<{$smarty.get.id}>&sort=2&city=<{$smarty.get.city|urlencode}>&key=<{$smarty.get.key|urlencode}>" <{if $smarty.get.sort == 2 }>class="px_on"<{/if}> >热度</a>
+            <a href="/list_companys.php?catType=<{$smarty.get.catType}>&id=<{$smarty.get.id}>&sort=3&city=<{$smarty.get.city|urlencode}>&key=<{$smarty.get.key|urlencode}>" <{if $smarty.get.sort == 3 }>class="px_on"<{/if}> >最新</a>
+        </div>
+        <div class="cp_ss">
+         <input type="hidden" name="catType" value="<{$smarty.get.catType}>" />
+        <input type="hidden" name="id" value="<{$smarty.get.id}>" />
+        <input type="hidden" name="city" value="<{$smarty.get.city}>" />
+        <input type="hidden" name="sort" value="<{$smarty.get.sort}>" />
+            <input name="key" id="key" type="text" value="<{if $smarty.get.key && $smarty.get.key != "输入搜索关键字试试"}><{$smarty.get.key}><{else}>输入搜索关键字试试<{/if}>" onFocus="OnFocusFun(this,'输入搜索关键字试试',false)" onBlur="OnBlurFun(this,'输入搜索关键字试试',false)"><input type="submit" class="ss_btn" value="搜 索">
+        </div>
+        <div class="fy">
+            <span>共找到<i><{$pages->totalRows}></i>条符合条件的信息</span>
+            <span style="padding:0 5px;"><{$pages->nowPage}>/<{$pages->totalPages}></span>
+            <a href="<{$pages->getPreLink()}>" title="上一页">&lt;</a>
+            <a href="<{$pages->getNextLink()}>" title="下一页">&gt;</a>
+        </div>
+    </div>
+    </form>
+    <script type="text/javascript">
+		/*焦点图*/
+	//$(".pic2").slide({ titCell:".num ul" , effect:"fold", mainCell:".pic_con" , autoPlay:true, delayTime:500 , autoPage:true,interTime:5000});
+	jQuery(".pic2").slide({titCell:".hd ul",mainCell:".bd .items", effect:"leftLoop" , delayTime:500 , autoPage:true,interTime:5000});
+	(function ($) {
+		$("#search_form").submit(function(){
+			if($("#key").val() == ""||$("#key").val() == "输入搜索关键字试试")
+				$("#key").attr("value",'');
+		
+		});
+	}(jQuery));
+	$(function(){
+		$(".dq_more").hover(function(){
+			$(this).addClass("dq_hover");
+			//$(this).children("ul li").attr('class','');
+		},function(){
+			$(this).removeClass("dq_hover");  
+			//$(this).children("ul li").attr('class','');
+		}
+	); 
+	});
+	</script>
+    <div class="blank10"></div>
+    <div class="qy_list">
+      <div>
+      	<ul>
+        <{foreach item=list from=$info.list}>
+      		<li>
+            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      		    <tr>
+    <td width="22%" rowspan="2" valign="top"><{if $list.logo}>
+							 <a hidefocus="true" target="_blank" href="<{geturl type='' uid=$list.userid user=$list.user}>"><img width="222" height="135" src="<{$config.imgurl}>uploadfile/userimg/<{$list.logo}>" class="pic" alt="<{$list.company}>"/></a>
+						 <{else}>
+							 <a hidefocus="true" target="_blank" href="<{geturl type='' uid=$list.userid user=$list.user}>"><img width="222" height="135" src="<{$config.imgurl}>image/default/nopic.gif" class="pic" alt="<{$list.company}>"/></a>
+						 <{/if}></td>
+    <td width="50%" height="30"><a href="<{geturl type='' uid=$list.userid user=$list.user}>" title="<{$list.company}>" target="_blank"><{$list.company}></a> <{if $list.business}><i class="vip1" title="第一电动网认证企业">&nbsp;</i><{/if}><{if $list.ifpay >= 3}>
+<i class="vip2" title="第一电动网VIP会员企业">&nbsp;</i><i class="vip3"><{$list.time_long}></i>
+<{/if}><!--<a href="/main.php?action=admin_friends&friendid=<{$list.userid}>" target="_blank" class="a1">[加为商友]</a>--></td>
+    <td width="28%" align="right">
+    <span class="hui" style="display:none"><{$list.regtime}>  加入第一电动网</span>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <{ if !empty($list.strClass) }>
+    <tr>
+    <td width="12%" height="25" valign="top">业务范围：<br></td>
+    <td width="88%" valign="top"> <{$list.strClass}></td>
+    </tr>
+    <{/if}>
+    <{if !empty($list.ctype) }>
+	<tr>
+    <td width="12%" height="25">企业类型：</td>
+    <td><{$list.ctype}></td>
+    </tr>
+    <{/if}>
+    <{if !empty($list.c_regtime) }>
+  <tr>
+    <td width="12%" height="25">成立时间：</td>
+    <td><{$list.c_regtime}></td>
+    </tr>
+    <{/if}>
+    <{if !empty($list.scope) }>
+  <tr>
+    <td width="12%" height="25">企业规模：</td>
+    <td><{$list.scope}></td>
+    </tr>
+     <{/if}>
+     <{if !empty($list.addr) }>
+  <tr>
+    <td width="12%">地　　址：</td>
+    <td><{$list.addr}></td>
+    </tr>
+    <{/if}>
+    </table></td>
+    <td align="center">
+    <{foreach item=prolist from=$list.pro}>
+    <{if $prolist.Cxk_id > 0}>
+     <a href="http://www.d1ev.com/auto/models/<{$prolist.Cxk_id }>.html" class="a2" target=_blank><img width="140" height="90" src="<{$prolist.img}>" class="pic cxk_img" id="mm_<{$prolist.Cxk_id}>" alt="<{$prolist.pname}>"><br /><{$prolist.pname|truncate:20}></a>
+     <{else}>
+	<a href="<{geturl type='prod' tid=$prolist.id}>" target="_blank" class="a2"><img width="140" height="90" src="<{$prolist.img}>" class="pic" alt="<{$prolist.pname}>"><br /><{$prolist.pname|truncate:20}></a>
+     
+     <{/if}>
+     <{/foreach}>
+  </td>
+  </tr>
+</table>
+            
+            
+
+            </li>
+            <{/foreach}>
+            
+      
+      	</ul>
+      </div>
+      
+      <div class="blank20"></div>
+      <div class="page">
+      <{$info.pages}>
+      </div>
+</div>
+</section>
+<div class="blank20"></div>
+<!--
+<script type="text/javascript" language="javascript" src="/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+var $j = jQuery.noConflict(); 
+$j(document).ready(function(){
+
+	$j(".cxk_img").each(function(){
+		var cxk_img = $j(this);
+		var cxk_a = $j(this).parent();
+		var id = $j(this).attr('id').replace("mm_","");
+	  $j.ajax({
+			type: "GET",
+			url: "/city.php?act=getzc&id="+id,
+			data: { date:new Date()},
+			dataType: "text",
+			success: function(data){
+				var dataObj=eval("("+data+")");
+				
+				if(dataObj.thumb)
+					cxk_img.attr('src',dataObj.thumb);
+			},
+			error: function () { }    
+		 });
+	});
+    
+});
+</script>
+
+<script type="text/javascript" src="http://www.autohome.com.cn/chezhan/chengdu2013/js/jquery.tools.min.js"></script>
+<script type="text/javascript">
+console.log(2);
+$(function () {
+$("#focusbox03").scrollable({circular:true}).autoscroll({interval: 6000});
+});
+</script>
+-->
+<{include file="../blue/footer_reg_new.htm"}>

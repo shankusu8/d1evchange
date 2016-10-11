@@ -1,0 +1,85 @@
+/*
+*2016.09.17
+*/
+body {
+  padding-top: 81px;
+}
+/*中间内容*/
+/*中间部分*/
+.ws-common-head {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  color: #333;
+  background: #f1f1f1;
+  padding-left: 24px;
+  position: relative;
+}
+.ws-common-head:after {
+  content: '';
+  height: 30px;
+  width: 4px;
+  background: #f60;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  margin-top: -14px;
+}
+.ws-content {
+  width: 1200px;
+  min-width: 1200px;
+  padding: 0;
+}
+.ws-content .ws-label a {
+  padding: 6px 16px;
+  font-size: 14px;
+  color: #666;
+  margin-right: 18px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin-bottom: 22px;
+}
+.ws-content .ws-word .ws-word-head ul {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 60px;
+  list-style: none;
+}
+.ws-content .ws-word .ws-word-head ul li {
+  width: 60px;
+  height: 30px;
+  text-align: center;
+  font-size: 18px;
+  color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.ws-content .ws-word .ws-word-head ul li.ws-selected {
+  color: #999;
+  cursor: pointer;
+}
+.ws-content .ws-word .ws-word-head ul li.ws-selected:hover {
+  background: #f60;
+  color: #fff;
+}
+.ws-content .ws-word .ws-word-list h5 {
+  font-size: 28px;
+  color: #333;
+  line-height: 1;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.ws-content .ws-word .ws-word-list .ws-word-child {
+  margin-bottom: 10px;
+}
+.ws-content .ws-word .ws-word-list .ws-word-child a {
+  padding: 6px 16px;
+  font-size: 14px;
+  color: #666;
+  margin-right: 18px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin-bottom: 22px;
+}

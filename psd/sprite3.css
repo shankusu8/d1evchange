@@ -1,0 +1,287 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-__ {
+    width: 28px;
+    height: 24px;
+    background-position: -5px -5px;
+}
+
+.sprite-__-3-__-4 {
+    width: 5px;
+    height: 9px;
+    background-position: -43px -5px;
+}
+
+.sprite-app_logo {
+    width: 17px;
+    height: 17px;
+    background-position: -58px -5px;
+}
+
+.sprite-autoMobilemMessage {
+    width: 200px;
+    height: 200px;
+    background-position: -85px -5px;
+}
+
+.sprite-capital {
+    width: 200px;
+    height: 200px;
+    background-position: -295px -5px;
+}
+
+.sprite-close {
+    width: 200px;
+    height: 200px;
+    background-position: -505px -5px;
+}
+
+.sprite-collect {
+    width: 200px;
+    height: 200px;
+    background-position: -715px -5px;
+}
+
+.sprite-comment1 {
+    width: 200px;
+    height: 200px;
+    background-position: -5px -215px;
+}
+
+.sprite-comment3 {
+    width: 200px;
+    height: 200px;
+    background-position: -215px -215px;
+}
+
+.sprite-company {
+    width: 274px;
+    height: 200px;
+    background-position: -425px -215px;
+}
+
+.sprite-delete {
+    width: 200px;
+    height: 200px;
+    background-position: -709px -215px;
+}
+
+.sprite-education {
+    width: 276px;
+    height: 200px;
+    background-position: -5px -425px;
+}
+
+.sprite-energyConservation {
+    width: 200px;
+    height: 200px;
+    background-position: -291px -425px;
+}
+
+.sprite-expression {
+    width: 200px;
+    height: 200px;
+    background-position: -501px -425px;
+}
+
+.sprite-good {
+    width: 200px;
+    height: 200px;
+    background-position: -711px -425px;
+}
+
+.sprite-good2 {
+    width: 200px;
+    height: 200px;
+    background-position: -5px -635px;
+}
+
+.sprite-hot {
+    width: 60px;
+    height: 60px;
+    background-position: -925px -5px;
+}
+
+.sprite-icon_circle {
+    width: 5px;
+    height: 5px;
+    background-position: -995px -5px;
+}
+
+.sprite-icon_comment {
+    width: 17px;
+    height: 15px;
+    background-position: -1010px -5px;
+}
+
+.sprite-icon_down {
+    width: 10px;
+    height: 5px;
+    background-position: -1037px -5px;
+}
+
+.sprite-icon_gold {
+    width: 18px;
+    height: 18px;
+    background-position: -1057px -5px;
+}
+
+.sprite-icon_good {
+    width: 16px;
+    height: 16px;
+    background-position: -1085px -5px;
+}
+
+.sprite-icon_magzine {
+    width: 20px;
+    height: 18px;
+    background-position: -43px -33px;
+}
+
+.sprite-icon_newsflash {
+    width: 5px;
+    height: 9px;
+    background-position: -995px -31px;
+}
+
+.sprite-icon_right {
+    width: 5px;
+    height: 9px;
+    background-position: -1010px -31px;
+}
+
+.sprite-icon_tips {
+    width: 18px;
+    height: 18px;
+    background-position: -1025px -33px;
+}
+
+.sprite-label {
+    width: 200px;
+    height: 200px;
+    background-position: -215px -635px;
+}
+
+.sprite-logo {
+    width: 133px;
+    height: 35px;
+    background-position: -925px -75px;
+}
+
+.sprite-market {
+    width: 207px;
+    height: 200px;
+    background-position: -425px -635px;
+}
+
+.sprite-more {
+    width: 200px;
+    height: 200px;
+    background-position: -642px -635px;
+}
+
+.sprite-morning {
+    width: 60px;
+    height: 60px;
+    background-position: -5px -61px;
+}
+
+.sprite-newcar {
+    width: 60px;
+    height: 60px;
+    background-position: -925px -120px;
+}
+
+.sprite-newflash {
+    width: 5px;
+    height: 9px;
+    background-position: -1085px -31px;
+}
+
+.sprite-person {
+    width: 200px;
+    height: 200px;
+    background-position: -852px -635px;
+}
+
+.sprite-place {
+    width: 200px;
+    height: 200px;
+    background-position: -5px -845px;
+}
+
+.sprite-reply {
+    width: 262px;
+    height: 200px;
+    background-position: -215px -845px;
+}
+
+.sprite-search {
+    width: 18px;
+    height: 18px;
+    background-position: -1053px -33px;
+}
+
+.sprite-shareToQQ {
+    width: 200px;
+    height: 200px;
+    background-position: -487px -845px;
+}
+
+.sprite-shareToSina {
+    width: 200px;
+    height: 200px;
+    background-position: -697px -845px;
+}
+
+.sprite-shareToWeixin {
+    width: 200px;
+    height: 200px;
+    background-position: -1111px -5px;
+}
+
+.sprite-splider_left {
+    width: 14px;
+    height: 36px;
+    background-position: -919px -215px;
+}
+
+.sprite-splider_right {
+    width: 14px;
+    height: 37px;
+    background-position: -943px -215px;
+}
+
+.sprite-subject {
+    width: 200px;
+    height: 200px;
+    background-position: -967px -215px;
+}
+
+.sprite-technology {
+    width: 200px;
+    height: 200px;
+    background-position: -921px -425px;
+}
+
+.sprite-time {
+    width: 200px;
+    height: 200px;
+    background-position: -1062px -635px;
+}
+
+.sprite-viewpoint {
+    width: 200px;
+    height: 200px;
+    background-position: -907px -845px;
+}
+
+.sprite-yidu_logo {
+    width: 17px;
+    height: 17px;
+    background-position: -1177px -215px;
+}

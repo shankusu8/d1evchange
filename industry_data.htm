@@ -1,0 +1,517 @@
+<{include file="../blue/header_qy_new.htm"}>
+
+<script type="text/javascript">
+header_wrap_nav_num=1;
+</script>
+
+<!--行业报告-->
+
+<div class="blank30"></div>
+<!--行业报告-->
+<article class="wrap qy_con2">
+	<section class="hysj">
+		<div class="hysj_tit">基础数据 -- <a href="javascript:;" class="<{if $get.bd==1}>cur<{/if}>">工信部</a><a href="javascript:;" class="<{if $get.bd==2}>cur<{/if}>">中国汽车工业协会</a><a href="javascript:;" class="<{if $get.bd==3}>cur<{/if}>">全国乘用车市场信息联席会</a></div>
+        <div class="sx">
+			<div class="sx_con" style="<{if $get.bd==1}>display:block;<{/if}>">
+				<form action="" method="get" class="form1" id="form1">
+					<p>时间：<select name="">
+							<{$date_for_select.sy}>
+						</select> 年 <select name="">
+							<{$date_for_select.month}>
+						</select> 月 -- <select name="">
+							<{$date_for_select.ey}>
+						</select> 年 <select name="">
+							<{$date_for_select.month}>
+						</select> 月 <input name="" opval='1' type="button" id="btns1" value="一键查询" class="btns">
+					</p>
+					<p>　　　<a href="javascript:;" onclick="resetOP(this,myChart1,option1,new Array(0,1,2,3));b_hide(this,1);" class="cur dft">月度</a><a href="javascript:;" onclick="resetOP(this,myChart1,setdata_ffy(option1),new Array(0,1,2,3));b_hide(this,0);">年度</a></p>
+					<p>类别：<a href="javascript:;" class="cur dft">产量</a></p>
+					<p>种类：<a href="javascript:;" onclick="resetOP(this,myChart1,option1,new Array(0,1,2,3));" class="cur dft">全部</a><a href="javascript:;" onclick="resetOP(this,myChart1,option1,new Array('0'));">纯电动乘用车</a><a href="javascript:;" onclick="resetOP(this,myChart1,option1,new Array('1'));">插电式混合动力乘用车</a><a href="javascript:;" onclick="resetOP(this,myChart1,option1,new Array('2'));">纯电动商用车</a><a href="javascript:;" onclick="resetOP(this,myChart1,option1,new Array('3'));">插电式混合动力商用车</a></p>
+				</form>
+                <div id="tb1" style="height:480px;"></div>
+            </div>
+            <div class="sx_con"  style="<{if $get.bd==2}>display:block;<{/if}>">
+				<form action="" method="get" id="form2">
+					<p>时间：<select name="">
+							<{$date_for_select.sy}>
+						</select> 年 <select name="">
+							<{$date_for_select.month}>
+						</select> 月 -- <select name="">
+							<{$date_for_select.ey}>
+						</select> 年 <select name="">
+							<{$date_for_select.month}>
+						</select> 月 <input name="" opval='2' type="button" id="" value="一键查询" class="btns"></p>
+					<p>　　　<a href="javascript:;" onclick="resetOP(this,myChart2,option2,new Array(0,1,2,3));b_hide(this,1);" class="cur dft">月度</a><a href="javascript:;" onclick="resetOP(this,myChart2,setdata_ffy(option2),new Array(0,1,2,3));b_hide(this,0);">年度</a></p>
+					<p>类别：<a href="javascript:;" onclick="resetOP(this,myChart2,option2,new Array(0,1,2,3));" class="cur dft">全部</a><a href="javascript:;" onclick="resetOP(this,myChart2,option2,new Array(0,1));">产量</a><a href="javascript:;" onclick="resetOP(this,myChart2,option2,new Array(2,3));">销量</a></p>
+					<p>种类：<a href="javascript:;" onclick="resetOP(this,myChart2,option2,new Array(0,1,2,3));;" class="cur dft">全部</a><a href="javascript:;" onclick="resetOP(this,myChart2,option2,new Array(0,2));;">纯电动</a><a href="javascript:;" onclick="resetOP(this,myChart2,option2,new Array(1,3));;">插电式混合动力</a></p>
+				</form>
+                <div id="tb2" style="height:400px;"></div>
+            </div>
+            <div class="sx_con"  style="<{if $get.bd==3}>display:block;<{/if}>">
+				<form action="" method="get" id="form3">
+					<p id="form3_sbm"><select class="catid" id="catid" value='clh' style="display:none">
+						</select>品牌：<select class="scatid" id="scatid" onChange="if(this.value!='')getSelect('stcatid','clh','all',this.value);">
+						</select>　车型：<select class="stcatid" id="stcatid">
+						</select></p>
+					<p>时间：<select name="">
+							<{$date_for_select.sy}>
+						</select> 年 <select name="">
+							<{$date_for_select.month}>
+						</select> 月 -- <select name="">
+							<{$date_for_select.ey}>
+						</select> 年 <select name="">
+							<{$date_for_select.month}>
+						</select> 月 <input name="" opval='3' type="button" id="" value="一键查询" class="btns">
+					</p>
+					<p>　　　<a href="javascript:;" onclick="resetOP(this,myChart3,option3,new Array(0,1));b_hide(this,1);" class="cur dft">月度</a><a href="javascript:;" onclick="resetOP(this,myChart3,setdata_ffy(option3),new Array(0,1));b_hide(this,0);">年度</a></p>
+					<p>类别：<a href="javascript:;" class="cur dft">销量</a></p>
+					<p>种类：<a href="javascript:;" onclick="resetOP(this,myChart3,option3,new Array(0,1));" class="cur dft">全部</a>
+					<a href="javascript:;" onclick="resetOP(this,myChart3,option3,new Array('0'));">纯电动乘用车</a>
+					<a href="javascript:;" onclick="resetOP(this,myChart3,option3,new Array('1'));">插电式混合动力乘用车</a></p>
+				</form>
+                <div id="tb3" style="height:400px;"></div>
+                
+            </div>
+        </div>
+        <div class="blank20"></div>
+        <!--相关文章-->
+        <h3 class="xg_news_tit"><{if $about.article|@count}><span>相关文章</span><{/if}></h3>
+        <div class="xg_news_list">
+        	<ul>
+			<{foreach item=item from=$about.article}>
+        		<li><a href="<{$item.url}>" title="<{$item.name}>" target="_blank"><{$item.name}></a></li>
+            <{/foreach}>
+            </ul>
+        </div>
+        
+        <!--高级数据-->
+        <div class="blank20"></div>
+        <div class="hysj_tit2">高级数据 -- <span>车型产量详情</span></div>
+        <div class="blank20"></div>
+        <div class="gjsj">
+        	<div class="gjsj_con">
+				<form action="" method="get" id="form4">
+					<p id="form4_sbm">种类：<select class="catid1" id="catid1" onChange="$('#scatid1').val('');$('#stcatid1').val('');if(this.value!='')getSelect('scatid1','gj_m_output',this.value,'');" >
+						</select>品牌：<select class="scatid" id="scatid1" onChange="$('#stcatid1').val('');if(this.value!='')getSelect('stcatid1','gj_m_output','all',this.value);" >
+					</select>　车型：<select class="stcatid" id="stcatid1"></select></p>
+					<p>时间：<select name="">
+							<{$date_for_select.sy}>
+						</select> 年 <select name="">
+							<{$date_for_select.month}>
+						</select> 月 -- <select name="">
+							<{$date_for_select.ey}>
+						</select> 年 <select name="">
+							<{$date_for_select.month}>
+						</select> 月 <input name="" opval='4' type="button" id="" value="一键查询" class="btns"></p>
+					<p>　　　<a href="javascript:;" onclick="resetOP(this,myChart4,option4,new Array(0,1));b_hide(this,1);" class="cur dft">月度</a><a href="javascript:;" onclick="resetOP(this,myChart4,setdata_ffy(option4),new Array(0,1));b_hide(this,0);">年度</a></p>
+					<p>类别：<a href="javascript:;" class="cur dft" >产量</a></p>
+					<!--<p>种类：<a href="javascript:;" class="cur">全部</a><a href="javascript:;">乘用车</span><a href="javascript:;">商用车</a><a href="javascript:;">专用车</a></p>-->
+					<p>技术路线：<a href="javascript:;" onclick="resetOP(this,myChart4,option4,new Array(0,1));" class="cur dft">全部</a><a href="javascript:;" onclick="resetOP(this,myChart4,option4,new Array('0'));">纯电动</a><a href="javascript:;" onclick="resetOP(this,myChart4,option4,new Array('1'));">插电式混合动力</a><!--<a href="javascript:;" onclick="resetOP(this,myChart4,option4,new Array('2'));">混合动力</a><a href="javascript:;" onclick="resetOP(this,myChart4,option4,new Array('3'));">燃料电池</a>--></p>
+				</form>
+	        	<div id="tb4" style="height:400px;"></div>
+			
+				<{if !$qx.qx_sj}>
+                <div class="err_bg"></div>
+				<div class="err">高级数据只有开通行业数据服务的用户登录后才可查阅，<br />请选择 “<a href="http://www.d1ev.com/public/buyService" target="_blank" class="yellow">开通行业数据服务</a>” 或 “<a href="/login.php" target="_blank" class="yellow">登录</a>”</div>
+				<{/if}>
+			</div>
+			<div class="blank20"></div>
+        <!--相关报告-->
+        <h3 class="xg_news_tit"><{if $about.eport|@count}><span>相关报告</span><{/if}></h3>
+        <div class="xg_news_list">
+        	<ul>
+			<{foreach item=item from=$about.eport}>
+        		<li><a href="<{$item.url}>" title="<{$item.name}>" target="_blank"><{$item.name}></a></li>
+            <{/foreach}>
+            </ul>
+        </div>
+        
+            
+            
+        </div>
+        
+        <div class="blank20"></div>
+        <div class="hysj_tit2">高级数据 -- <span>车型配套数据</span></div>
+        <div class="blank20"></div>
+        <div class="gjsj">
+        	<div class="gjsj_con">
+				<form action="" method="get" id="form5">
+					<p id="form5_sbm">种类：<select class="catid" id="catid2" onChange="$('#scatid2').val('');$('#stcatid2').val('');if(this.value!='')getSelect('scatid2','',this.value,'');">
+					</select>　品牌：<select class="scatid" id="scatid2" onChange="$('#stcatid2').val('');if(this.value!='')getSelect('stcatid2','',$('#catid2')[0].value,this.value);">
+					</select>　车型：<select class="stcatid" id="stcatid2" onchange="$(this).next().click()">
+					</select> 
+					<input name="" opval='5' type="button" id="" value="一键查询" class="btns"></p>
+				</form>
+				<table id="table5" width="100%" border="0" cellspacing="0" cellpadding="0" class="gjsj_tb">
+					<tr>
+						<td width="20%">种类</td>
+						<td width="30%" name="species">&nbsp;</td>
+						<td width="20%">电池容量kWh</td>
+						<td width="30%" name="b_capacity">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>技术路线</td>
+						<td class="table5_data" name="tech">&nbsp;</td>
+						<td>电池总成供应商</td>
+						<td class="table5_data" name="b_supplier">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>品牌</td>
+						<td class="table5_data" name="brand">&nbsp;</td>
+						<td>电池类型</td>
+						<td class="table5_data" name="b_models">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>车型</td>
+						<td class="table5_data" name="models">&nbsp;</td>
+						<td>电池单体供应商</td>
+						<td class="table5_data" name="b_s_supplier"iers>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>车型型号</td>
+						<td class="table5_data" name="model">&nbsp;</td>
+						<td>电池总质量Kg</td>
+						<td class="table5_data" name="b_weight">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>总质量Kg</td>
+						<td class="table5_data" name="weight">&nbsp;</td>
+						<td>驱动电机供应商<br></td>
+						<td class="table5_data" name="m_supplier">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>长mm</td>
+						<td class="table5_data" name="long">&nbsp;</td>
+						<td>驱动电机类型</td>
+						<td class="table5_data" name="m_models">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>宽mm</td>
+						<td class="table5_data" name="width">&nbsp;</td>
+						<td>电机控制器供应商</td>
+						<td class="table5_data" name="m_d_supplier">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>高mm</td>
+						<td class="table5_data" name="high">&nbsp;</td>
+						<td>BMS供应商</td>
+						<td class="table5_data" name="bms_supplier">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>最高车速Km/h</td>
+						<td class="table5_data" name="speed">&nbsp;</td>
+						<td>续航里程Km（工况法）</td>
+						<td class="table5_data" name="left">&nbsp;</td>
+					</tr>
+				</table>
+				<{if !$qx.qx_sj}>
+                <div class="err_bg1"></div>
+				<div class="err1">高级数据只有开通行业数据服务的用户登录后才可查阅，<br />请选择 “<a href="http://www.d1ev.com/public/buyService" target="_blank" class="yellow">开通行业数据服务</a>” 或 “<a href="/login.php" target="_blank" class="yellow">登录</a>”</div>
+				<{/if}>
+			</div>
+			
+            
+            
+        </div>
+	</section>
+  <aside class="qy_rt">
+	<!--<h2><span>最新报告</span></h2>
+    <div class="xg_bd">
+    	<ul>
+		<{foreach item=re key=key from=$newest_eport}>
+    		<li class="<{if $key==0}>cur<{/if}>">
+            	<h3><a href="/industry_eport_detail.php?pid=<{$re.parentID}>&id=<{$re.id}>" title="<{$re.title}>" target="_blank"><{$re.title}></a></h3>
+                <p><{$re.intro}></p>
+            </li>
+		<{/foreach}>
+    	</ul>
+    </div>
+        <div class="blank20"></div>-->
+        <h2><span>第一电动研究院</span></h2>
+		<div class="yjy">行业报告与数据由第一电动研究院出品，每月更新发
+布。第一电动研究院是由第一电动网2011年成立，致力
+于关注、搜集、整理、分析新能源汽车市场动态及趋
+势，为业内同仁提供一个客观视野。</div>
+		<div class="blank20"></div>
+        <h2><span>行业数据</span></h2>
+        <div class="hybg">
+			<p><span class="yellow">我们免费提供：</span></p>
+			<p>工信部月产数据，中国汽车工业协会月产、月销数据，全国乘用车市场信息联席会月销数据</p>
+			<p></p>
+			<p><span class="yellow">我们还提供：</span></p>
+			<p>1、纯电动、插电式、混合动力、燃料电池类型的具体车型月度产量数据</p>
+			<p>2、更多的车型配套详情数据</p>
+            <p><a href="http://www.d1ev.com/public/buyService" class="kt_btn">立即开通行业数据</a>即可查询所有数据</p>
+        </div>
+	</aside>
+</article>
+
+
+
+
+
+
+
+
+<div class="blank50"></div>
+
+
+<div style="display: none;">
+	<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254528018'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/stat.php%3Fid%3D1254528018' type='text/javascript'%3E%3C/script%3E"));</script>
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?588b5be675575aa84f24e83f3788dcb6";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-24831486-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		  ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+		  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+	</script>
+</div>
+
+
+<script src="/js/echarts-all.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	// 基于准备好的dom，初始化echarts图表
+	myChart1 = echarts.init(document.getElementById('tb1'),'macarons'); 
+	myChart2 = echarts.init(document.getElementById('tb2'),'macarons'); 
+	myChart3 = echarts.init(document.getElementById('tb3'),'macarons'); 
+	myChart4 = echarts.init(document.getElementById('tb4'),'macarons'); 
+	
+	setOp();
+	$(".btns").click(function(){
+		setOp(this,$(this).attr('opval'));
+	});
+	
+	getSelect('scatid','clh','all','');
+	getSelect('catid1','gj_m_output','','');
+	getSelect('catid2','','','');
+	
+});
+	function setOp(obj,op){
+		var timestamp=new Date().getTime();
+		pars ="time="+timestamp;
+		
+		if(typeof(op)=="undefined")
+			var op=0;
+			
+		if(op!=1 && op!=2 && op!=3 && op!=4 && op!=5){
+			jQuery.getJSON("/user_hysj.php",pars,function(data){
+				option1=data.option1;
+				option2=data.option2;
+				option3=data.option3;
+				option4=data.option4;
+				// 为echarts对象加载数据 
+				myChart1.setOption(option1); 
+				myChart2.setOption(option2); 
+				myChart3.setOption(option3); 
+				myChart4.setOption(option4); 
+			});
+		}else if(op!=5){
+			pars += "&year_f="+$(obj).prevAll()[3].value;
+			pars += "&month_f="+$(obj).prevAll()[2].value;
+			pars += "&year_l="+$(obj).prevAll()[1].value;
+			pars += "&month_l="+$(obj).prevAll()[0].value;
+			pars += "&op="+op;
+			switch(op){
+				case '1':{
+					jQuery.getJSON("/user_hysj.php",pars,function(data){
+						option1=data.option1;
+						myChart1.clear();
+						myChart1.setOption(option1);
+					});
+					break;
+				}
+				case '2':{
+					jQuery.getJSON("/user_hysj.php",pars,function(data){
+						option2=data.option2;
+						myChart2.clear();
+						myChart2.setOption(option2);
+					});
+					break;
+				}
+				case '3':{
+					pars += "&s="+encodeURI($('#form'+op+'_sbm select')[0].value);
+					pars += "&b="+encodeURI($('#form'+op+'_sbm select')[1].value);
+					pars += "&m="+encodeURI($('#form'+op+'_sbm select')[2].value);
+					jQuery.getJSON("/user_hysj.php",pars,function(data){
+						option3=data.option3;
+						myChart3.clear();
+						myChart3.setOption(option3);
+					});
+					break;
+				}
+				case '4':{
+					pars += "&s="+encodeURI($('#form'+op+'_sbm select')[0].value);
+					pars += "&b="+encodeURI($('#form'+op+'_sbm select')[1].value);
+					pars += "&m="+encodeURI($('#form'+op+'_sbm select')[2].value);
+					jQuery.getJSON("/user_hysj.php",pars,function(data){
+						option4=data.option4;
+						myChart4.clear();
+						myChart4.setOption(option4);
+					});
+					break;
+				}
+				default:
+					break;
+			}
+		}else{//op=5
+			if($('#form'+op+'_sbm select')[2].value==""){
+				setOption5('');
+				return false;
+			}
+			pars += "&s="+encodeURI($('#form'+op+'_sbm select')[0].value);
+			pars += "&b="+encodeURI($('#form'+op+'_sbm select')[1].value);
+			pars += "&m="+encodeURI($('#form'+op+'_sbm select')[2].value);
+			pars += "&op="+op;
+			jQuery.getJSON("/user_hysj.php",pars,function(data){
+				option5=data.option5;
+				setOption5(option5);
+			});
+		}
+		//
+		//console.log('form'+op);
+		//console.log(pars);
+	}
+	function setOp_r(obj0,pn){			//Array('0','2')
+		obj=$.extend({},obj0);
+		obj.legend=$.extend({},obj0.legend);
+		var op_l_d = new Array();
+		var op_s_d = new Array();
+		for(var i=0;i<pn.length;i++){
+			op_l_d.push(obj.legend.data[pn[i]]);
+			op_s_d.push(obj.series[pn[i]]);
+		}
+		obj.legend.data=op_l_d;
+		obj.series=op_s_d;
+		return $.extend({},obj);
+	}
+	function setOption5(data){
+		if(data){
+			for(var k in data){
+				$("#table5 tr [name="+k+"]").html(data[k]);
+			}
+		}else{
+			$("#table5 .table5_data").html("/");
+		}
+	}
+		
+	function getSelect(ob,f,s,b)
+	{
+		ob ="#"+ob;
+		var url = '/car_models.php';
+		var tt = new Date().getTime();;
+		var pars = 'tt=' + tt + '&f=' + encodeURI(f);
+		if(typeof(s)!='undefined')
+			pars += '&s='+ encodeURI(s);
+		if(typeof(s)!='undefined' && typeof(b)!='undefined')
+			pars += '&b='+ encodeURI(b);
+			
+		//
+		//console.log(pars);
+		
+		jQuery.getJSON(url,pars,function(data){
+			showResponse(data);
+		});
+		function showResponse(originalRequest)
+		{
+			var MyMe =originalRequest.result; 
+			$(ob).empty();
+			$(ob).append("<option value=''>请选择</option>"); 
+			for(var k in MyMe)
+			{
+				$(ob).append("<option value='"+MyMe[k]+"'>"+MyMe[k]+"</option>"); 
+			}
+		}
+　	}
+function resetOP(obj,from,option,arr){
+	$(obj).parent().parent().find('.dft').addClass("cur").siblings().removeClass("cur");
+	$(obj).addClass("cur").siblings().removeClass("cur");
+	from.clear();
+	from.setOption(setOp_r(option,arr));
+}
+function setdata_ffy(obj0){
+	obj=JSON.parse(JSON.stringify(obj0));
+	obj.title.text = obj.title.text_ffy;
+	obj.xAxis[0].data = obj.xAxis[0].data_ffy;
+	obj.series = obj.series_ffy;
+	return $.extend({},obj);
+}
+function b_hide(obj,hos){
+	if(hos==1){
+		$(obj).parent().next().slideDown();
+		$(obj).parent().next().next().slideDown();
+	}else{
+		$(obj).parent().next().slideUp();
+		$(obj).parent().next().next().slideUp();
+	}
+}
+
+</script>
+<script>
+$(document).ready(function() {
+    $(".xg_bd li").mouseenter(function(){
+		$(this).addClass("cur").siblings().removeClass("cur");
+	});
+    $(".hysj_tit a").click(function(){
+		$(this).addClass("cur").siblings().removeClass("cur");
+		$('.sx .sx_con:eq('+$(this).index()+')').show().siblings().hide();
+		myChart1.restore(); 
+		myChart2.restore(); 
+		myChart3.restore(); 
+
+	});
+});
+//左边的固定定位
+$(function(){
+	var arr=[];
+	arr[0]=$('.hysj_tit').eq(0).offset().top;	
+	arr[1]=$('.hysj_tit2').eq(0).offset().top;	
+	arr[2]=$('.hysj_tit2').eq(1).offset().top;	
+	$('.fixLeft li').click(function(){
+		var h=arr[$(this).index()];
+		//alert(arr[$(this).index()]);
+		$('html,body').animate({scrollTop:arr[$(this).index()]},100);
+	});	
+	$(window).scroll(function(){
+		var scroH = $(this).scrollTop();
+		//console.log('scroH'+':'+scroH+'-'+arr);
+		if(scroH>=1234){
+			set_cur(2);
+		}else if(scroH>=arr[1]){
+			set_cur(1);
+		}else if(scroH>arr[0]){
+			set_cur(0);
+		}
+	});
+	function set_cur(n){
+		if($(".fixLeft li").hasClass("on")){
+			$(".fixLeft li").removeClass("on");
+		}
+		$(".fixLeft li").eq(n).addClass("on");
+		
+	}
+});
+
+
+</script>
+
+<ul class="fixLeft">
+	<li class="on">基础数据</li>
+	<li>车型产量</li>
+	<li>车型配套</li>
+</ul>
+
+<{include file="../blue/footer_reg_new.htm"}>

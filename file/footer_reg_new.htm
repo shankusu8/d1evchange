@@ -1,0 +1,207 @@
+
+    <style>
+
+        .am-container{
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+        .am-cf:after, .am-cf:before {
+            content: " ";
+            display: table;
+        }
+        .am-fl {
+            float: left;
+        }
+        .am-fr {
+            float: right;
+        }
+        .am-cf:after {
+            display: block;
+            content: "";
+            clear: both;
+
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #f60;
+        }
+
+
+
+
+
+        /*尾部*/
+        .ws-foot-bg {
+            position: relative;
+            background: #fff;
+            font-family: "Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3",FontAwesome,sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+            color: #333;
+            font-size: 16px;
+
+
+            padding-top: 40px;
+            background: #fafafa;
+        }
+        .ws-foot {
+            width: 1200px;
+            min-width: 1200px;
+            padding: 0;
+        }
+        .ws-foot .ws-foot-list {
+            width: 600px;
+            margin: 0 auto;
+        }
+        .ws-foot .ws-foot-item {
+            padding: 0 20px;
+            position: relative;
+            font-size: 14px;
+            color: #787878;
+        }
+        .ws-foot .ws-foot-itemLast {
+            padding: 0 20px;
+            position: relative;
+            font-size: 14px;
+            color: #787878;
+        }
+        .ws-foot .ws-foot-item:after {
+            content: '';
+            position: absolute;
+            top: 4px;
+            right: 0;
+            border-left: 1px solid #ceced0;
+            height: 14px;
+        }
+        .ws-foot .ws-foot-copyright {
+            text-align: center;
+            font-size: 14px;
+            color: #787878;
+            padding: 20px 0 40px;
+        }
+        .ws-foot .ws-foot-copyrightA {
+            color: #787878;
+            padding: 0 5px;
+        }
+		
+		.ws-hr{
+			
+			    display: block;
+				padding: 0;
+				border: 0;
+				height: 0;
+				-webkit-box-sizing: content-box;
+				box-sizing: content-box;
+			    border-top: 1px solid #e5e5e5;
+				margin: 0;
+		}
+    </style>
+
+<hr class="ws-hr">
+<!--尾部-->
+<div class="ws-foot-bg">
+    <div class="ws-foot am-container">
+        <div class="am-cf ws-foot-list">
+            <a href="http://www.d1ev.com/contents/index/aboutus" class="am-fl ws-foot-item">关于我们</a>
+            <a href="http://www.d1ev.com/contents/index/callus" class="am-fl ws-foot-item">联系我们</a>
+            <a href="http://www.d1ev.com/contents/index/jionus" class="am-fl ws-foot-item">加入我们</a>
+            <a href="http://www.d1ev.com/contents/index/agreement" class="am-fl ws-foot-item">用户协议</a>
+            <a href="http://www.d1ev.com/contents/index/friendlink" class="am-fl ws-foot-item">友情链接</a>
+            <a href="http://www.d1ev.com/contents/index/servers" class="am-fl ws-foot-itemLast">广告与服务</a>
+        </div>
+        <div class="ws-foot-copyright">
+            Copyright © 2010-2016 <a href="http://www.d1ev.com/" class="ws-foot-copyrightA">第一电动网</a> 京ICP备14024261号 　京ICP证160753号　京公网安备110105011343
+        </div>
+    </div>
+</div>
+<script>
+(function($) {
+	$(document).on('click','.backToTop',function() {
+
+		$("html, body").animate({ scrollTop:0 },300);
+	});
+	var $backToTopFun = function() {
+		var st = $(document).scrollTop(),
+				winh = $(window).height();
+		(st > 0)? $(".backToTop").show(): $(".backToTop").hide();
+	};
+	$(window).bind("scroll", $backToTopFun);
+	$(function() { $backToTopFun(); });
+
+})(jQuery);
+</script>
+<script type="text/javascript" src="http://www.d1ev.com/statics/2015d1ev/js/top.js"></script>
+
+<script>
+$(document).ready(function() {
+	/*鼠标移过，左右按钮显示*/
+	$(".pic1").hover(function(){
+		$(this).find(".prev,.next").fadeTo("show",0.3);
+	},function(){
+		$(this).find(".prev,.next").hide();
+	});
+	/*鼠标移过某个按钮 高亮显示*/
+	$(".prev,.next").hover(function(){
+		$(this).fadeTo("show",0.7);
+	},function(){
+		$(this).fadeTo("show",0.3);
+	});
+	/*焦点图*/
+	$(".pic1").slide({ titCell:".num ul" , effect:"fold", mainCell:".pic_con" , autoPlay:true, delayTime:500 , autoPage:true,interTime:5000});
+
+    $(".xg_bd li").mouseenter(function(){
+		$(this).addClass("cur").siblings().removeClass("cur");
+	});
+    $(".hysj_tit a").click(function(){
+		$(this).addClass("cur").siblings().removeClass("cur");
+		$('.sx .sx_con:eq('+$(this).index()+')').show().siblings().hide();
+	});
+	/*企业库切换*/
+	$(".qyk_tit li").mouseenter(function(){
+		$(this).addClass("cur").siblings().removeClass("cur");
+		callLazy();
+		$('.qyk_con .qyk_list:eq('+$(this).index()+')').show().siblings().hide();
+	});
+	$(".qyk_list h3 span").click(function(){
+		$(this).addClass("cur").siblings().removeClass("cur");
+		callLazy();
+		$(this).parent().siblings(".qyk_img").find('ul:eq('+$(this).index()+')').show().siblings().hide();
+	});
+	/*产品库切换*/
+	$(".cpk_tit li").mouseenter(function(){
+		$(this).addClass("cur").siblings().removeClass("cur");
+		callLazy();
+		$('.cpk_con .cpk_list:eq('+$(this).index()+')').show().siblings().hide();
+	});
+	$(".cpk_list h3 span").click(function(){
+		$(this).addClass("cur").siblings().removeClass("cur");
+		callLazy();
+		$(this).parent().siblings(".cpk_img").find('ul:eq('+$(this).index()+')').show().siblings().hide();
+	});
+	
+	$(".vip_qy").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true,effect:"left",autoPlay:true,scroll:4,vis:4,interTime:5000});
+        $(".vip_qy1").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true,effect:"left",autoPlay:true,scroll:6,vis:6,interTime:5000});
+
+});
+
+function callLazy(){
+	$("html, body").scrollTop(0-$("html, body").offset().top+1);
+	$("html, body").scrollTop(0-$("html, body").offset().top-1);
+}
+
+$(".top3 .nav_l li").removeClass('nv_cur');
+$(".top3 .nav_l li").eq(header_wrap_nav_num).addClass('nv_cur');
+</script>
+
+<div style="display:none"><script>var _hmt=_hmt||[];(function(){var hm=document.createElement("script");hm.src="//hm.baidu.com/hm.js?c1d54a092f01be0215b4487856c2c6f6";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s);})();</script><script type="text/javascript">var cnzz_protocol=(("https:"==document.location.protocol)?" https://":" http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_2469655'%3E%3C/span%3E%3Cscript src='"+cnzz_protocol+"s13.cnzz.com/stat.php%3Fid%3D2469655' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">var cnzz_protocol=(("https:"==document.location.protocol)?" https://":" http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254528018'%3E%3C/span%3E%3Cscript src='"+cnzz_protocol+"s95.cnzz.com/stat.php%3Fid%3D1254528018' type='text/javascript'%3E%3C/script%3E"));</script></div>
+</body>
+</html>

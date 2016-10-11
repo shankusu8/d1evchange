@@ -1,0 +1,231 @@
+h1,h2,h3,h4,h5,h6,ul {_zoom:1;}
+.hd2 {height:20px; clear:both; overflow:hidden; font-size:0;*height:0;}
+/*面包屑*/
+.crumb{height:30px; line-height:30px;font-size:12px; color:#7a7a7a;  border-bottom:1px #ddd solid; overflow:hidden;}
+.crumb a{ line-height:30px; color:#7a7a7a;  text-decoration:none;}
+.crumb a i { display:inline-block; float:left; width:17px; height:16px; background:url(http://www.d1ev.com/statics/2015d1ev/images/d1ev_ico.png) -98px -20px no-repeat; margin:7px 5px 0 0;}
+.crumb .yellow { font-weight:bold;}
+.crumb a:hover{ color:#FF6600; text-decoration:underline;}
+.crumb a:hover i { background-position:-116px -20px;}
+/*内容区*/
+.main { width:1100px; margin:0 auto; overflow:hidden; background-color:#fff;}
+.m_l {font-size:12px; line-height:18px; width:690px; float:left; padding-right:25px; border-right:1px #ddd solid;}
+
+.main_l { background-color:#f2f2f2; border:1px #ddd solid; overflow:hidden; padding:20px;}
+.main_l .user_img { float: left; overflow:hidden; width:100px; height:100px; }
+.main_l .user_img img {width:100px; height:100px; border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;}
+.main_l .user_ms { float:left; width:300px; padding-left:20px; width:520px;}
+.main_l .user_ms .user_name .i_1{display: inline-block; vertical-align:middle;width:18px; height:18px; background:url(http://www.d1ev.com/images/sex.png) left center no-repeat; margin-top:3px;}
+.main_l .user_ms .user_name .i_2{display: inline-block; vertical-align:middle;width:18px; height:18px; background:url(http://www.d1ev.com/images/sex.png) right center no-repeat; margin-top:3px;}
+.main_l .user_ms .user_name span { display:inline-block;overflow:hidden;margin-left:5px; font-size:14px;vertical-align:middle; }
+.main_l .user_ms .user_name { overflow:hidden; line-height:24px;zoom:1;}
+.main_l .user_web { padding-top:20px;} 
+.main_l .user_web a { font-size:14px; color:#f60; text-decoration:underline;}
+.main_l .user_web a:hover { color:#DE5228;}
+.main_l .user_ms .user_cn { overflow:hidden; line-height:34px; float:left; width:100%;}
+.main_l .user_ms .u_name { overflow:hidden; font-size:18px; padding-right:10px;}
+.main_l .user_ms .user_cn p { line-height:20px; padding-left:20px; margin-top:5px;}
+.main_l .user_ms .u_btns {overflow:hidden; padding-top:20px;}
+.u_link { float:left; line-height:20px; font-size:14px;}
+.u_link a { color:#666; text-decoration:none; display:block;}
+.u_link a:hover { color:#f60;}
+.u_link ul { margin-left:-1px; overflow:hidden; _zoom:1;}
+.u_link li { float:left; width:70px; text-align:center; border-left:1px #ddd solid;}
+.btns_inline { display: inline-block; vertical-align:middle; overflow:hidden; margin-right:10px; padding-top:0px; float:right;} 
+
+
+
+.main_l .user_ms .type { float:left; overflow:hidden; font-size:14px;} 
+.main_l .user_ms .type img { margin-right:5px; vertical-align:middle; }
+.main_l .user_ms .zan { display:inline-block; float:right; border:1px #f60 solid; height: 28px; line-height:28px; padding:0 10px;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;}
+.main_l .user_ms .zan_cuser,.main_l .user_ms .zan_end { font-size:14px; overflow:hidden; display:block; color:#f60; text-decoration:none; } 
+.main_l .btns { overflow:hidden; margin-top: 2px;} 
+.ms{ display:inline-block; vertical-align:middle;width:76px !important; height:28px!important; border:1px #ff6600 solid; background-color:#fff; line-height:28px; text-align:center; margin-right:5px; font-size:14px; color:#f60; border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px; float:right; margin-top:5px;}
+.ms:hover { text-decoration:none; background-color:#f1f1f1;}
+.ms i { display:inline-block; width:13px; height:9px;position: relative;top: 0px;background:url(http://www.d1ev.com/statics/2015d1ev/images/d1ev_ico.png) -161px -31px no-repeat; margin-right:3px;overflow:hidden; _display:none;}
+.main_l p { font-size:14px; line-height:22px;}
+
+.main_r { width:360px; background-color:#f2f2f2; float:right; position:relative; height:120px;}
+.main_r  h3 { font-size:20px; line-height:60px; text-align:center; font-weight:normal; padding:0; border:1px #e0e0e0 solid; border-bottom:0;}
+.main_r  h3 span { color:#EC6C07; padding:0 10px;}
+
+.main_r .pl,.main_r .hy,.main_r .gzl,.main_r .gzz{display:block; width:90px;height:50px; background-color:#B3B3B3; text-align:center; color:#fff; position:absolute; font-size:14px; padding-top:10px; cursor:pointer; line-height:20px;}
+.main_r .pl:hover,.main_r .hy:hover,.main_r .gzl:hover,.main_r .gzz:hover{background-color:##A4A4A4; text-decoration:none; background-image:none;}
+
+.main_r .gzl {left:0px; bottom:0; background:#B3B3B3 url(http://www.d1ev.com/images/b_xian.gif) right center no-repeat;}
+.main_r .gzz {left:90px; bottom:0;background:#B3B3B3 url(http://www.d1ev.com/images/b_xian.gif) right center no-repeat; }
+.main_r .pl {right:90px; bottom:0;background:#B3B3B3 url(http://www.d1ev.com/images/b_xian.gif) right center no-repeat; }
+
+.main_r .hy {right:0; bottom:0; }
+
+
+.main_r #pl { position:absolute; top:130px; right:40px; width:140px; border:1px #ddd solid; padding:20px 0; background-color:#fff; z-index:1100; visibility:hidden;-webkit-border-radius: 3px;
+-moz-border-radius: 3px;border-radius: 3px;}
+.main_r #pl p { padding:0 20px;}
+.main_r #pl a,#hy a{ display:inline !important; color:#EC6C07; padding:0 5px; font-size:14px;}
+.main_r #pl a:hover,#hy a:hover { text-decoration:underline;}
+.main_r #hy { position:absolute; top:130px; right:0; width:140px; border:1px #ddd solid; padding:20px 0; background-color:#fff; z-index:1100;visibility:hidden;-webkit-border-radius: 3px;
+-moz-border-radius: 3px;border-radius: 3px;}
+.main_r #hy p { padding:0 20px;}
+.main_r #pl i { background:url(http://www.d1ev.com/images/jt3.png) center 0 no-repeat; display:block; height:10px; position:absolute; top:-10px; left:35px; z-index:1000; width:18px;}
+.main_r #hy i { background:url(http://www.d1ev.com/images/jt3.png) center 0 no-repeat; display:block; height:10px; position:absolute;position:absolute; top:-10px; right:36px;z-index:1000;width:18px;}
+
+.gz_btn{ display:block; float:left; width:76px !important; height:24px !important; border:1px #ff6600 solid; background-color:#fff; line-height:24px; text-align:center; margin-right:5px; font-size:14px; color:#f60; border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px; font-size:12px;}
+.gz_btn:hover{ text-decoration:none; background-color:#FFE3D0;}
+.gz_btn i {background:url(http://www.d1ev.com/statics/2015d1ev/images/d1ev_ico.png) -161px -18px no-repeat;display:inline-block !important; width:10px !important; height:10px !important; vertical-align:inherit; *vertical-align:middle;margin-right:3px; overflow:hidden; float:none !important;}
+
+.m_r {line-height:18px; float:right; width:360px; }
+
+#tab { display:block; overflow:hidden; margin:0 0 10px 0; border-bottom:1px #ddd solid;}
+#tab li { float:left; overflow:hidden;  margin-right:10px; }
+#tab li a {line-height:34px; display:block; text-align:center; font-size:14px;  text-decoration:none; padding:0 10px;}
+#tab li.tabcur a { background:url(http://www.d1ev.com/statics/extres/member/images/qh_btt1.png) center bottom no-repeat;  font-weight:bold;}
+
+.tabcon {overflow:hidden;display:none; padding:10px 0;}
+.tabcon li {overflow:hidden; padding:10px 0 10px 110px ; line-height:22px; position:relative;background:url(http://www.d1ev.com/images/timeline1.png) -98px 0px repeat-y;}
+.tabcon li .pl_time { position: absolute;top: 16px;left: 0px;width:70px;padding-right: 20px;background:url(http://www.d1ev.com/images/timeline1.png) 82px 6px no-repeat;text-align: right; font-size:12px;}
+.tabcon li .pl_t { padding:6px 0; color:#666; }
+.tabcon li .pl_t a { color: #f60 !important;}
+.tabcon li .pl_c { color:#000; padding-left:25px; background:url(http://www.d1ev.com/images/jt5.png) left 5px no-repeat;}
+.tabcon li .news_t { padding:10px 0 0 25px; font-weight:normal; font-size:12px; }
+.tabcon li .news_t a { color:#999; text-decoration:underline; }
+.tabcon li .news_t a:hover{color: #f60 !important;}
+.tabcon li .pl_tm { padding-left:25px;}
+.tabcon li .pl_tm span { overflow:hidden; float:left;color:#999; padding-right:6px;}
+.tabcon li .pl_tm .hf { background:url(http://www.d1ev.com/images/ico_ms1.png) 0 center no-repeat; width:20px; height:20px; float:none; display:inline-block;}
+.tabcon li .pl_tm .hf:hover {background:url(http://www.d1ev.com/images/ico_ms2.png) 0 center no-repeat;}
+
+.tabcon1 {overflow:hidden;display:none;font-size:12px; color:#999;}
+.tabcon1 li { overflow:hidden; border-bottom:1px #ddd dashed; padding:15px 0 5px 0; zoom:1;}
+.tabcon1 .fans_img { float:left; width:52px; height:52px; padding-bottom:15px;}
+.tabcon1 .fans_img img{display:block;width:50px;height:50px;border:1px solid #ddd; -moz-border-radius:100px;-webkit-border-radius:100px;border-radius:100px;-webkit-transition:all 0.2s ease-in-out;-moz-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out;box-shadow:0 1px 2px rgba(0, 0, 0, 0.22);}
+.tabcon1 .fans_img img:hover{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);transform:rotate(360deg);}
+.tabcon1 .fans_ms { float:left; overflow:hidden; padding-left:15px;}
+.tabcon1 .fans_ms p { padding-bottom:12px; padding-top:3px;}
+.tabcon1 .fans_ms a { color:#f60; text-decoration:none;}
+.tabcon1 .fans_gz { float:right; overflow:hidden; padding-top:15px;}
+
+
+.fans_con .fy { text-align:center; padding:10px 0;}
+.fans_con .fy span { display:inline-block; padding:2px 8px; color:#333; background-color:#ddd; border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px; border:1px #ddd solid; }
+.fans_con .fy span:hover {background-color:#ccc;}
+.fans_con .fy a {display:inline-block; padding:2px 8px; color:#fff; background-color:#0080C0; border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px; text-decoration:none;border:1px #0080C0 solid;} 
+.fans_con .fy a:hover {background: #004A6F;}
+
+/* 内容右 */
+.m_r h2 { font-size:16px; font-weight:100; line-height:34px; height:34px; border-bottom:2px #ddd solid; margin-bottom:20px;}
+.m_r h2 span { float:left; overflow:hidden;border-bottom:2px #FF6500 solid;}
+.m_r h2 .more { float:right; display:inline-block; overflow:hidden; font-size:10px; line-height:16px; color:#ff6500; margin-top:15px;}
+.m_r h2 .more:hover { color:#DE5228;}
+.m_r h2 a.f5 { float:right; padding-left:16px; background:url(http://www.d1ev.com/statics/images/f5_ico1.png) 0 center no-repeat; overflow:hidden; color:#9FA3A7; font-size:12px;}
+.m_r h2 a.f5:hover {background:url(http://www.d1ev.com/statics/images/f5_ico2.png) 0 center no-repeat; color:#f60}
+
+/*文章排行*/
+.m_r .n_list { margin-top:-10px;}
+.m_r .n_list { background:url(http://www.d1ev.com/statics/2015d1ev/images/num_list2.png) 0 8px no-repeat;}
+.m_r .n_list li { line-height:32px; height:32px; overflow:hidden; padding-left:26px; font-size:14px;}
+
+#more {text-align:center;margin-top:10px;border:0;}
+#more li {margin:0;padding:0;border:0;background-image:none;}
+#more li a {display:block;height:30px;line-height:30px;background-color:#f2f2f2;color:#333;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;}
+#more li a:hover {background-color:#ddd; color:#f60;}
+
+.lk_con { overflow:hidden;padding:15px 0;}
+.lk_con ul{ overflow:hidden; zoom:1; margin-left:-24px; }
+.lk_con li { float:left; text-align:center; line-height:20px; width:70px; overflow:hidden; height:120px; margin-left:26px;}
+.lk_con li img { width:66px; height:66px; border:2px #C1C1C3 solid; border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;}
+
+/* 新闻列表 */
+.new_list .list_con { display:none;}
+.new_list li { width:100%; overflow:hidden; padding:30px 0;}
+.new_list li .list_lt { float:left; width:210px; height:140px;}
+.new_list li .list_lt img { width:210px; height:140px;}
+.new_list li .list_rt { float:right; width:460px; height:140px; position:relative;}
+.new_list li .list_rt h3 { font-size:24px; font-weight:100;max-height: 62px; padding-bottom:6px; overflow:hidden; }
+.new_list li .list_rt h3 .new_tit { min-width:100%;line-height:32px;}
+.new_list li .list_rt h3 .new_tit:hover {color:#f60; text-decoration:none;}
+.new_list li .list_rt h3 .new_l { background-color:#FF6500; color:#fff; font-size:14px; padding:0 5px 2px 5px; display:inline-block; vertical-align:middle;line-height: 20px;}
+.new_list li .list_rt h3 .new_l:hover {background-color:#DE5228; text-decoration:none;}
+.new_list li .list_rt .news_txt { color:#666; line-height:20px; font-size:15px; height:40px; overflow:hidden;}
+
+
+.new_list li .list_rt .rt_bt { position:absolute;bottom:0; left:0; width:100%; color:#666;}
+.new_list li .list_rt .rt_bt .f_l { float:left; overflow:hidden;}
+.new_list li .list_rt .rt_bt .f_l .author { margin-right:15px;}
+.new_list li .list_rt .rt_bt .f_l .author i {display:inline-block; width:13px; height:13px; background:url(http://www.d1ev.com/statics/2015d1ev/images/d1ev_ico.png) -151px 0 no-repeat; vertical-align:sub; *vertical-align:middle;margin-right:5px;}
+.new_list li .list_rt .rt_bt .f_l .author:hover i { background-position:-167px 0;}
+.new_list li .list_rt .rt_bt .f_l .time i {display:inline-block; width:14px; height:14px; background:url(http://www.d1ev.com/statics/2015d1ev/images/d1ev_ico.png) -99px 0 no-repeat; vertical-align:sub; *vertical-align:middle;margin-right:5px;}
+
+.new_list li .list_rt .rt_bt .f_r { float:right; color:#666; }
+.new_list li .list_rt .rt_bt .f_r .pl_num { float:left; margin-right:10px;}
+.new_list li .list_rt .rt_bt .f_r .pl_num i { display:inline-block; width:14px; height:13px; background:url(http://www.d1ev.com/statics/2015d1ev/images/d1ev_ico.png) -117px 0 no-repeat; vertical-align:middle; margin-right:5px;}
+.new_list li .list_rt .rt_bt .f_r .pl_num:hover i { background-position:-134px 0;}
+.new_list li .list_rt .rt_bt .f_r .pl_num:hover { text-decoration:none;}
+.new_list li .list_rt .rt_bt .f_r .f_r_l { float:left;}
+
+.ck_more { margin:10px 0;}
+.ck_more a { text-align:center;display:block; color:#ff6600; font-size:16px;line-height:30px; height:30px; width:100%;}
+.ck_more a:hover { text-decoration:none; background-color:#f5f5f5;color:#ff6600;}
+
+/*share*/
+
+.shareTo { float:left; position:relative; padding:0 3px 0 10px; cursor:pointer;}
+.shareshowbtn { display:inline-block; background:url(http://www.d1ev.com/statics/2015d1ev/images/d1ev_ico.png) 0 -20px no-repeat; width:14px; height:14px; }
+.shareTo .share { display:none; background:#FFFFFF; border: 1px solid #DBDBDB; right:3px; overflow: hidden; padding: 8px; position: absolute; top:-34px; width: 88px; z-index:1000; }
+.shareTo .share a { display: inline-block; float: left; height: 16px;width: 16px; margin: 0 3px;  overflow: hidden;text-indent: -999em;  }
+.shareTo .share .bds_tsina { background: url(http://www.d1ev.com/statics/2015d1ev/images/d1ev_ico.png) -18px -20px no-repeat; }
+.shareTo .share .bds_qzone { background: url(http://www.d1ev.com/statics/2015d1ev/images/d1ev_ico.png) -38px -20px no-repeat; }
+.shareTo .share .bds_tqq { background: url(http://www.d1ev.com/statics/2015d1ev/images/d1ev_ico.png) -58px -20px no-repeat;}
+.shareTo .share .bds_qq { background: url(http://www.d1ev.com/statics/2015d1ev/images/d1ev_ico.png) -78px -20px no-repeat; }
+
+
+/*分页*/
+.page { text-align:center; padding:20px 0 ; overflow:hidden;}
+.page a,.page span { display:inline-block; padding:5px 10px; margin:0 2px;  font-size:14px; vertical-align:middle;}
+.page a { border:1px #ddd solid; background-color:#fff;}
+.page a:hover { border:1px #FF6500 solid; color:#ff6500; text-decoration:none;}
+.page span { border:1px #FF6500 solid; background-color:#FF6500; color:#fff;}
+
+.rzcx .car_pic { display:block; position: relative; overflow:hidden;width:360px; height:240px;}
+.rzcx .car_pic img { width:360px; height:240px;}
+.rzcx .car_pic h4 { display:block;  font-size:16px; background:url(http://www.d1ev.com/statics/2015d1ev/images/jb_bg.png) 0 0 repeat-x; height:34px; line-height:34px; font-weight:100; position:absolute; width:360px; z-index:5; text-align:center; bottom:0; left:0; color:#fff; cursor:pointer;}
+
+
+/*该车型其他认证车主*/
+.qtcz { overflow:hidden;}
+.qtcz ul { margin-top:-11px;}
+.qtcz li { overflow:hidden; padding:15px 0; border-top:1px #ddd solid;}
+.qtcz li .l_img { float:left; height:72px; width:72px;}
+.qtcz li .l_img img { border:2px #ddd solid; width:68px; height:68px; border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;}
+.qtcz li .r_cn {float:right; width:275px;}
+.qtcz li .r_cn h4 { font-size:16px; font-weight:100;}
+.qtcz li .r_cn h4 img { vertical-align:middle; margin-right:6px;}
+.qtcz li .r_cn h4 .type { font-size:14px; margin-left:10px;}
+.qtcz li .r_cn .c_txt { padding-top:10px; line-height:22px; color:#666;}
+
+
+.gz { display:inline-block; width:80px; height:28px; border:1px #f60 solid; border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px; text-align: center; line-height:28px; color:#f60; font-size:14px; vertical-align:middle;}
+
+.gz b { font-weight:bold;  margin-right:3px;}
+.gz:hover { background-color:#f1f1f1; text-decoration:none;}
+.gz_end { display:inline-block; padding:0 10px; overflow:hidden; height:28px; border:1px #ddd solid; border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px; text-align: center; line-height:28px; color:#999; font-size:12px;vertical-align:middle;}
+.gz_end  a { color:#333;}
+.gz_end  a:hover { color:#f60;}
+
+
+
+/*弹出层*/
+.box {position: absolute;width:400px;left:50%;height:auto;z-index:2100;background-color:#fff;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px; box-shadow:2px 2px 10px #000;-moz-box-shadow:2px 2px 10px #000;-webkit-box-shadow:2px 2px 10px #000; display:none; overflow:hidden;}
+.box h2{height:40px;font-size:16px;background-color:#EBEBEB;position:relative;padding:0 10px;line-height:40px;color:#333; font-weight:100; border-bottom:1px #DBD0BC solid;}
+.box h2 span { float:left; overflow:hidden;}
+.box h2 a{ float:right; display:block; width:12px; height:12px; overflow:hidden;font-size:14px;color:#fff; background:url(http://www.d1ev.com/statics/gkk/gkk_ico.png) -20px -100px no-repeat; text-indent:-100px; margin-top:13px;}
+.box .sx_main { padding:10px 0;}
+.box table td{ padding:5px; font-size:14px; color:#666;}
+.box table td .ipt1 { width:250px; padding:5px 5px;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px; border:1px #ccc solid; background-color:#fff; color:#666; }
+.box table td .ipt2 { width:250px; padding:5px 5px; height:80px;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px; border:1px #ccc solid; background-color:#fff; color:#666; }
+.box table td .ipt3 {width:120px; height:36px;background-color:#437919; font-size:16px; text-align:center; color:#fff; line-height:36px; cursor:pointer; border:0;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;box-shadow:2px 2px 2px #ccc;-moz-box-shadow:2px 2px 2px #ccc;-webkit-box-shadow:2px 2px 2px #ccc;}
+.box table td .ipt3:hover {background-color:#376615;}
+.box table td i { color:#d00; font-style:normal; padding:5px; overflow:hidden; }
+#bm_bg{background-color:#000;position:absolute;z-index:2099;left:0;top:0;display:none;width:100%;height:100%;opacity:0.7;filter: alpha(opacity=70);-moz-opacity: 0.7;-webkit-opacity: 0.7;}
+
+

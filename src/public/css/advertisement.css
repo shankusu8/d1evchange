@@ -1,0 +1,209 @@
+body{
+    font-family: 'Helvetica Neue', 'Helvetica','Hiragino Sans GB', 'PingHei', 'PingFang SC', 'STHeitiSC-Light', 'Microsoft YaHei',"微软雅黑", 'Arial', sans-serif;
+}
+/* am-btn*/
+.am-btn--re {
+    padding: 5px 13px;
+    font-size: 37px;
+    background-color: #f8f8f8;
+    margin-top: 24px;
+    font-weight: 500;
+}
+.vertical-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.am-topbar button {
+    border: none;
+}
+.am-btn--re img {
+    width: 22px;
+    height: 20px;
+}
+.am-topbar{
+    border-bottom: 1px solid #e5e5e5;
+    background: #fff;
+}
+.am-with-topbar-fixed-top {
+    padding-top: 81px
+}
+@media only screen and (min-width: 641px) {
+    .am-topbar-nav > li > a:after {
+        border: none;
+    }
+}
+.am-topbar a {
+    color: #333;
+}
+.am-topbar a.active {
+    color:#f60
+}
+.am-topbar a:active {
+    color: #333;
+}
+.am-topbar-brand {
+    padding: 0px;
+    float: left;
+    font-size: 1.8rem;
+    height: 80px;
+    line-height: 80px;
+}
+@media only screen and (min-width: 641px) {
+    .am-topbar-nav {
+        float: right;
+    }
+}
+@media only screen and (min-width: 641px) {
+    .am-topbar-nav > li > a {
+        position: relative;
+        line-height: 80px;
+        padding: 0 30px
+    }
+}
+@media only screen and (min-width: 641px) {
+    .am-container--re {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+.am-container--re {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+    max-width: 1200px;
+}
+.nav-leftimg{
+	width:133px;
+	height:35px;
+}
+.nav-rightimg{padding-left:24px;}
+@media only screen and (min-width: 641px) {
+    [class*=am-u-] {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+@media only screen and (max-width: 641px){
+    .am-topbar-brand .nav-leftimg{padding:0!important;}
+}
+.am-nav>li>a:focus, .am-nav>li>a:hover{
+    background: #fff;
+}
+/*kanli*/
+ul,li{
+    list-style:none;
+}
+.kanli--wrapped{
+    max-width:1200px;
+    margin:0 auto;
+}
+.kanli{
+    display:flex;
+}
+.kanli .kanlil{
+    flex:145px;
+    min-width:140px;
+    flex-direction: column;
+}
+.kanli .kanlir{
+    flex:1060px;
+    border:none;
+    min-height:700px;
+    padding-left:140px;
+    width:60%;
+}
+#kanli-tab{
+    position:fixed;
+    top:90px;
+    left:50%;
+    margin-left: -600px;
+    width:140px;
+    height:520px;
+    overflow: hidden;
+    z-index:102;
+}
+@media only screen and (max-width: 1300px){
+    #kanli-tab{
+        left:0;
+        margin-left:0;
+    }
+}
+.kanli .am-tabs-nav{
+    background: #fafafa;
+}
+[data-am-widget="tabs"] .am-tabs-nav {
+    text-align: left;
+}
+.tab--boundary{
+    background: #4d4d4d;
+    color:#fff;
+    font-size:18px;
+}
+.kanli .am-tabs-nav .tab--boundary a{
+    color:#fff;
+}
+.kanli .am-tabs-nav>.am-active.tab--type{
+    background: #ff5400;
+    color:#fff;
+}
+.tab--type{
+    background: #f60;
+}
+.kanli .am-tabs-nav .tab--type a{
+    color:#fff;
+}
+.kanli .am-tabs-nav>.am-active a {
+    background-color: transparent;
+}
+.kanli .am-tabs-nav>.am-active.tab--content a {
+    color:#333;
+}
+.kanli .am-tabs-nav>.am-active.tab--content{
+    background: #eee;
+}
+.kanli>ul>li{
+    padding:0 12px;
+}
+.kanli>ul>li.tab--boundary,.kanli>ul>li.tab--type{
+    margin-top:10px;
+    color:#fff;
+    min-height:40px;
+}
+@media(max-width:1200px){
+    .kanli--wrapped{
+        width:1200px;
+        margin:0 auto;
+        overflow:scroll;
+    }
+}
+
+/*footer*/
+.copyright{
+    font-size:16px;
+    color:#4d4d4d;
+    min-height:70px;
+    background: #fafafa;
+    /* margin-top:-70px; */
+    border-top:1px solid #e8e8e8;
+}
+.copyright a{
+    color:#4d4d4d;
+}
+.copyright p{
+    text-align:center;
+    padding:0 20px;
+    margin:1.9rem auto 0;
+    padding-bottom:1.9rem;
+}
+.blank39{
+    width:100%;
+    height:39px;
+}

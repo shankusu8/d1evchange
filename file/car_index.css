@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*标题1*/
+.con_tit1 { font-size:18px; font-weight:100; line-height:34px; height:34px; border-bottom:2px #ddd solid;}
+.con_tit1 span { float:left; overflow:hidden;border-bottom:2px #FF6500 solid;}
+/*标题2*/
+.con_tit2 { font-weight:100;line-height:34px; height:34px; border-bottom:2px #7AB200 solid;}
+.con_tit2_a { float:left; overflow:hidden; }
+.con_tit2_a:hover { color:#7AB200;text-decoration:none;}
+.con_tit2 span { cursor:pointer; display:inline-block;}
+
+.con_tit2 .tab_nav2_1 { float:left; overflow:hidden; margin-left:10px;}
+.con_tit2 .tab_nav2_1 span { font-size:12px; height:20px; line-height:20px; padding:0 6px; }
+.con_tit2 .tab_nav2_1 span.cur { background-color:#7AB200; color:#fff;}
+.con_tit2 .tab_nav2_2 { float:right; overflow:hidden;font-size:12px;margin-top: 7px;}
+.con_tit2 .tab_nav2_2 span  { float:left; display: inline-block; border:1px #ddd solid; padding:0 6px; line-height:20px;}
+.con_tit2 .tab_nav2_2 span i { display:inline-block; width:9px; height:10px; background: url(http://www.d1ev.com/statics/2015d1ev/images/d1ev_ico.png) 0 -350px no-repeat; margin-left:3px; position:relative; top:1px;}
+.con_tit2 .tab_nav2_2 span i.jt_ico1 { background-position:0 -350px;}
+.con_tit2 .tab_nav2_2 span.cur i.jt_ico1 { background-position:-10px -350px;}
+.con_tit2 .tab_nav2_2 span i.jt_ico2 { background-position:-20px -350px;}
+.con_tit2 .tab_nav2_2 span.cur i.jt_ico2 { background-position:-30px -350px;}
+.con_tit2 .tab_nav2_2 .cur { color:#7AB200; }
+/*标题3*/
+.con_tit3 { font-weight:100;line-height:34px; height:34px; border-bottom:2px #009FE9 solid;}
+.con_tit3_a { float:left; overflow:hidden; }
+.con_tit3_a:hover { color:#009FE9;text-decoration:none;}
+.con_tit3 span { cursor:pointer; display:inline-block;}
+.con_tit3 .tab_nav3_1 { float:left; overflow:hidden; margin-left:10px;}
+.con_tit3 .tab_nav3_1 span { font-size:12px; height:20px; line-height:20px; padding:0 6px; }
+.con_tit3 .tab_nav3_1 span.cur { background-color:#009FE9; color:#fff;}
+.con_tit3 .tab_nav3_2 { float:right; overflow:hidden;font-size:12px; margin-top:7px; }
+.con_tit3 .tab_nav3_2 span { float:left; display: inline-block; border:1px #ddd solid; padding:0 6px; line-height:20px;}
+.con_tit3 .tab_nav3_2 span i { display:inline-block; width:9px; height:10px; background: url(http://www.d1ev.com/statics/2015d1ev/images/d1ev_ico.png) 0 -370px no-repeat; margin-left:3px; position:relative; top:1px;}
+.con_tit3 .tab_nav3_2 span i.jt_ico3 { background-position:0 -370px;}
+.con_tit3 .tab_nav3_2 span.cur i.jt_ico3 { background-position:-10px -370px;}
+.con_tit3 .tab_nav3_2 span i.jt_ico4 { background-position:-20px -370px;}
+.con_tit3 .tab_nav3_2 span.cur i.jt_ico4 { background-position:-30px -370px;}
+.con_tit3 .tab_nav3_2 .cur { color:#009FE9; }
+
+.tab_nav2_2_2,.tab_nav3_3_2 { display:none;}
+.tab_con2 section,.tab_con3 section { display:none;}
+.tab_con2 section ul,.tab_con3 section ul { display:none;}
+
+
+/*车列表*/
+.car_list ul { margin-left:-27px;  overflow:hidden; _zoom:1;}
+.car_list li { float:left; width:200px; margin-left:27px;margin-top:20px;_display:inline;}
+.car_list li img { width:198px; height:132px; border:1px #ddd solid;}
+.car_list li h3 { font-size:14px; font-weight:100; overflow:hidden; margin-bottom:3px; margin-top:10px;}
+.car_list li h3 a { float:left; height:16px; line-height:16px; max-width:170px; overflow:hidden;}
+.car_list li h3 i { float:left; margin-left:5px;_margin-left:2px; display:inline-block; padding:0 1px 0 3px; height:16px; overflow:hidden; text-align:center; font-size:12px; line-height:16px; color:#fff; background-color:#f60; font-style:normal; border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;}
+.car_list li h3 i.temai { background-color:#f60;}
+.car_list li p { padding-top:5px;}
+
+.car_list2 {margin-top:20px;}
+.car_list2 h4 { font-size:16px; font-weight:100;}
+.car_list2 .con_l { float:left; width:500px;}
+.car_list2 .con_r { float:right; width:500px;}
+.car_list2 li { overflow:hidden; margin-top:20px;_zoom:1;}
+.car_list2 li img { width:135px; height:90px; float:left; border:1px #ddd solid; margin-right:10px;}
+.car_list2 li em { float:left; font-size:12px; display:inline-block; width:14px; height:14px;line-height:14px; text-align:center; font-style:normal; border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%; border:1px #ccc solid; margin-right:10px;}
+.car_list2 li h3 { float:left;font-size:14px; font-weight:100; line-height:16px; height:16px; overflow:hidden;}
+.car_list2 li h3 a { float:left; height:16px; line-height:16px; max-width:300px; overflow:hidden;}
+.car_list2 li h3 i { float:left; margin-left:5px;_margin-left:2px; display:inline-block; padding:0 1px 0 3px; height:16px; overflow:hidden; text-align:center; font-size:12px; line-height:16px; color:#fff; background-color:#f60; font-style:normal; border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;}
+.car_list2 li h3 i.temai { background-color:#f60;}
+.car_list2 li .price { float:right;}
+
+
+.car_list2 li.car_top3 em { border:1px #f60 solid; color:#f60;}
+.car_list2 li.car_top3 .car_ms { float:right; width:320px; position:relative; height:90px;}
+.car_list2 li.car_top3 .car_ms h3 { float:none;}
+.car_list2 li.car_top3 .car_ms h3 a {max-width:280px; }
+.car_list2 li.car_top3 .car_ms .price { float:none; line-height:30px;}
+.car_list2 li.car_top3 .car_ms .car_lk { position:absolute; bottom:0; left:0; font-size:14px;}
+.car_list2 li.car_top3 .car_ms .car_lk a { margin-right:10px; color:#0080C0;}
+
+
+
+
+
+
+
+
+
+
+
